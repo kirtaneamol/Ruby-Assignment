@@ -46,7 +46,7 @@ optparse = OptionParser.new do|opts|
   opts.on( '-l', '--toport top', 'Allowed IP CIDR' ) do|top|
   options[:toport] = top
   end
-  options[:ipprotocol] = '22' #Default value
+  options[:ipprotocol] = 'tcp' #Default value
   opts.on( '-l', '--ipprotocol iprot', 'Allowed IP CIDR' ) do|iprot|
   options[:ipprotocol] = iprot
   end
